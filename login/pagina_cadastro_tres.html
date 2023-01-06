@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Cadastro Edifica</title>
+        <!--style do circulo de progresso / azul do cadastro-->
+
+        <!--link bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="/login/style.css">
+    <!-- head -->
+        <div class="b-example-divider"></div>
+        <div class="container">
+            <header class="header">
+                <a href="/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img class="logo" src="/img-vetores/logo-header.png">
+                </a>
+                    <div class="col-md-3 text-end">
+                    <button type="button" class="botaoAzulCadastro"> <a href="/login/pagina_login.html">Login</a></button>
+                    </div>
+            </header>
+        </div>
+<body>
+    <div class="Login">
+   
+                    <form class="">
+                        <div class="input-cadast">
+                    <div class="container text-center">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <form method="get" action=".">
+                                    <h4> CEP </h4>
+                                    <input id="cep" value="" class="input-p1"  required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')"
+                                    onblur="pesquisacep(this.value);" /><br />
+                                    
+                                    <h4> Rua </h4>
+                                    <input id="rua" size="60" class="input-p1" type="text" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">
+
+                                    <h4> Bairro </h4>
+                                    <input id="bairro" size="40" class="input-p1" type="text" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">                                   
+                                    
+                                    <h4> Cidade </h4>
+                                    <input id="cidade" size="40" class="input-p1" type="text" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">      
+                            </div>
+                            <!--segubda xoluna-->
+                            <div class="col">
+
+                                <h4> Estado </h4>
+                                    <input id="uf" size="2" class="input-p1" type="text" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')" >
+                                    
+                                <h4> Longradouro </h4>
+                                <input class="input-p1" type="text" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">
+                                    
+                                <h4> Numero </h4>
+                                <input class="input-p1" type="number" size="3" placeholder="Apenas números" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')"> 
+                                
+                                <h4> Complemento </h4>
+                                <input class="input-p1" type="text" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">
+                            </div>
+                            </div>
+            </form>
+    </div> 
+    <!-- Input check -->
+        <div class="check">
+            <input type="checkbox">
+            <label for="check"> Aceita receber informações por email? </label>
+        </div>
+        <!-- Botão para próxima etapa -->
+        <div class="botaobotaoRosaCadastroFinal">
+            <button class="botaoRosaCadastro"> <a href="/plataforma/pos_login.html"> Entrar </a></button>
+        </div>
+</form>     
+
+<!--js da api cep viaCEP-->
+
+<script>
+    
+    function limpa_formulário_cep() {
+            //Limpa valores do formulário de cep.
+            document.getElementById('rua').value=("");
+            document.getElementById('bairro').value=("");
+            document.getElementById('cidade').value=("");
+            document.getElementById('uf').value=("");
+    }
+
+    function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+            //Atualiza os campos com os valores.
+            document.getElementById('rua').value=(conteudo.logradouro);
+            document.getElementById('bairro').value=(conteudo.bairro);
+            document.getElementById('cidade').value=(conteudo.localidade);
+            document.getElementById('uf').value=(conteudo.uf);
+        } //end if.
+        else {
+            //CEP não Encontrado.
+            limpa_formulário_cep();
+            alert("CEP não encontrado.");
+        }
+    }
+        
+    function pesquisacep(valor) {
+
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+            //Expressão regular para validar o CEP.
+            var validacep = /^[0-9]{8}$/;
+
+            //Valida o formato do CEP.
+            if(validacep.test(cep)) {
+
+                //Preenche os campos com "..." enquanto consulta webservice.
+                document.getElementById('rua').value="...";
+                document.getElementById('bairro').value="...";
+                document.getElementById('cidade').value="...";
+                document.getElementById('uf').value="...";
+
+                //Cria um elemento javascript.
+                var script = document.createElement('script');
+
+                //Sincroniza com o callback.
+                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+                //Insere script no documento e carrega o conteúdo.
+                document.body.appendChild(script);
+
+            } //end if.
+            else {
+                //cep é inválido.
+                limpa_formulário_cep();
+                alert("Formato de CEP inválido.");
+            }
+        } //end if.
+        else {
+            //cep sem valor, limpa formulário.
+            limpa_formulário_cep();
+        }
+    };
+
+    </script>
+</body>
+</html>

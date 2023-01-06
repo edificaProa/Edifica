@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro Edifica</title>
+<!--circulo de processo de cadastro-->
+    <style>
+
+        .part-1 {
+            height: max-content;
+            position: relative;
+        }
+
+        .box {
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .box-circle svg{
+            width: 150px;
+            height: 150px;
+        }
+
+        circle {
+            width: 150px;
+            height: 150px;
+            fill: none;
+            stroke-width: 8;
+            transform: translate(5px, 5px);
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: -80px;
+           
+        }
+
+        circle:nth-child(1) {
+            stroke-dashoffset: 0;
+            stroke: #CFCFCF;
+        }
+
+        circle:nth-child(2) {
+            stroke-dashoffset: 180;
+            stroke: #2A53E5;
+        }
+
+        .number {
+            top: 0;
+            margin-top: -30px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+    </style>
+
+    <!--style do circulo de progresso / azul do cadastro-->
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/login/style.css">
+</head>
+<div class="b-example-divider"></div>
+<div class="container">
+  <header class="header">
+    <a href="/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <img class="logo" src="/img-vetores/logo-header.png">
+    </a>
+    <div class="col-md-3 text-end">
+      <button type="button" class="botaoAzulCadastro"> <a href="/login/pagina_login.html">Login</a></button>
+    </div>
+  </header>
+</div>
+<body>
+    <div class="Login">
+    <!-- Parte do cadastro -->
+    <div class="part-1">
+        <!-- circulo de progresso -->
+            <div class="box">
+                <div class="box-circle">
+                    <svg>
+                        <circle id="circleProgress" cx="70" cy="70"  r="70"></circle>
+                        <circle id="circleProgress" cx="70" cy="70"  r="70"></circle>
+                    </svg>
+                </div>
+                <div class="number">
+                    <h2>2 de 3</h2>
+                </div>
+            </div>
+    </div>
+    <!-- Inputs co  m as informações -->
+    <form class="">
+        <div class="input-cadast">
+        <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                            
+                            <h4> Nome Completo </h4>
+                            <input class="input-p1" type="text" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">
+                                <h4> Data de Nascimento </h4>
+                                    <input class="input-p1" type="date" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">
+                                <h4> CPF * </h4>
+                                    <input class="input-p1" type="number" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">
+                                <h4> Sexo </h4>
+                                    <select class="input-p1" class="form-select" aria-label="Default select example">
+                                        <option selected>Selecione uma opção.</option>
+                                        <option value="1">Mulher Cisgênero</option>
+                                        <option value="2">Mulher Transgênero</option>
+                                        <option value="3">Não-Binário</option>
+                                        <option value="3">Prefiro Não Responder</option>
+                                        <option value="3">Outro</option>
+                                      </select>
+              </div>
+              <div class="col">
+                
+                    <h4> Tipo de Documento </h4>
+                         <select class="input-p1" class="form-select" aria-label="Default select example">
+                                        <option selected>Selecione uma opção.</option>
+                                        <option value="1">RG</option>
+                                        <option value="2">CNH</option>
+                                       
+                                      </select>
+                    <h4> Número de Documento </h4>
+                        <input class="input-p1" type="number" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">
+                
+                    <h4> Orgão Emissor </h4>
+                        <input class="input-p1" type="text" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">
+                
+                    <h4> Estado Emissor </h4>
+                        <input class="input-p1" type="text" required oninvalid="this.setCustomValidity('Por favor querida, não se esqueça de preencher esse campo.')" oninput="setCustomValidity('')">
+              </div>
+            </div>
+        </div>
+</div>
+    <!-- Input check -->
+    <div class="check">
+        <input type="checkbox">
+        <label for="check"> Aceita receber informações por email? </label>
+    </div>
+    <!-- Botão para próxima etapa -->
+    <div class="botaobotaoRosaCadastroFinal">
+        <button class="botaoRosaCadastro"> <a href="/login/pagina_cadastro_um.html"> Voltar </a></button>
+        <button class="botaoRosaCadastro"> <a href="/login/pagina_cadastro_tres.html"> Proxima Etapa </a></button>
+        
+    </div>
+</form>     
+</body>
+</html>

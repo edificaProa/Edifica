@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+/* fonts 
+    'Inter', sans-serif
+    'IBM Plex Serif', serif;
+    
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+   
+} 
+
+ul , li , dl, ol {
+    display: flex;
+    gap: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.strong {
+    color: rgb(35, 1, 1);
+   
+}
+
+.strong:hover {
+    color: #F4F4F4;
+}
+
+.logo-image-header {
+    height: 35px;
+}
+
+.header {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    margin: 18px;  
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F4F4F4;
+}
+
+.aBotaoRosa {
+    color: #F4F4F4;
+}
+
+.aBotaoRosa:hover{
+    color: black;
+}
+
+.body , .html  {
+    border-top: 3.4px solid white ;
+}
+
+.menu {
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.logo {
+    width: 60%;
+}
+
+.box-um {
+    padding-bottom: 45px;
+    padding-top: 35PX;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+
+.botaoRosa {
+    border-radius: 35px;
+    background: linear-gradient(84.28deg, #E06351 6.82%, #5C4EBD 102.33%);
+    color: aliceblue;
+    height: 40px;
+    width: 140px;
+    border: none;
+    
+}
+
+/*********        capa          **********/
+
+.capa{
+/* image 22 */
+width: 100%;
+height: 80%;
+left: 0px;
+top: 130px;
+
+background: url(image.png);
+
+}
+
+/*********        capa          **********/
+
+/*********        Fale conosco          **********/
+.form{
+	overflow: hidden;
+	width: 90%;
+	height: 90%;
+	margin: 10% 0 0 0;
+	text-align: center;
+    display: inline-block;
+	border-radius: 10px;
+    
+}
+
+.form h2{
+    font-size: 40px;
+	padding: 10px;
+}
+
+
+input,text{
+	border-radius: 10px;
+	height: 20px;
+	border: solid#2A53E5 2px;
+	margin: 5px;
+    padding: 15px;
+    word-break: break-word;
+}
+
+.Mensagem{
+    height: 150px;
+    width: 480px;
+    border-radius: 15px;
+    text-align: top;
+    word-break: break-word;
+}
+
+input[type="submit"]{
+	cursor: pointer;
+	border-radius: 10px;
+	border: 2px solid#2A53E5;
+	width: 80px;
+	height: 35px;
+    padding: 5px;
+}
+
+input[type="submit"]:hover{
+	color: #2A53E5;
+}
+
+@media (max-width: 680px) {
+	.form { 
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 80%;
+	height: auto;
+	margin-top: 0  ;
+	}
+	input, label{ 
+	margin: 5px;
+	}   
+}
+/*********        Fale conosco          **********/
+
+/*********        FAQ         **********/
+.faq-container{
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 850px;
+    margin: 0 5% 5% 0;
+    padding: 20px;
+    display: flex;
+}
+
+.faq-titulo{
+    color: #EF406A;
+    font-size: 40px;
+    padding: 10px 0px 5px 0px;
+    margin-bottom: 15px;
+}
+
+.pergunta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #FD9F02;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.pergunta h3{
+    color: #00000033;
+    font-size: 23px;
+}
+
+.pergunta i{
+    color:  #FD9F02;
+    font-size: 33px;
+    transition: all 0.5s ease;
+}
+
+.resposta{
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    transform: scaleY(0.2);
+    transform-origin: top;
+    color: #00000080;
+
+}
+
+.ativar{
+    max-height: 300px;
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.fechar i{
+    transform: rotate(180deg);
+}
+
+/*********        FAQ          **********/
+
+/*********        corpo          **********/
+.container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evelyn;
+}
+
+
+/*********        corpo          **********/
+
+/*********        *footer          **********/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #210440;
+    color: #F4F4F4;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+.email {
+    color: #F4F4F4;
+    background-color: #584071;
+    border-radius: 9px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.fot-txt {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.cardImag {
+    padding: 15px;    
+
+}
+
+.funçaoDiv p {
+    padding: 10px;
+}
+
+.logosContact {
+    display: flex;
+}
+
+.mapsDiv {
+    background-color: #2A53E5;
+}

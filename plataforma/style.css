@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+/* fonts 
+    'Inter', sans-serif
+    'IBM Plex Serif', serif;
+    
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+} 
+/*header*/
+
+header {
+ background-color: rgb(2, 2, 255);
+ align-items: center;
+ 
+}
+
+.menu {
+    background-color: gold;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   padding: 25px;
+}
+
+/*botoes header*/
+
+#botaoBusca , #botaoNotificações {
+    background-color: rgb(9, 231, 175);
+    padding-left: 35px;
+}
+
+
+/*conteudo esquerdo*/
+
+.caixaEsquerda {
+    background-color: palevioletred;
+    align-items: center;
+    display: block;
+   margin: 5px;
+   padding: 5px;
+   width: 75px;
+
+}
+
+.caixaEsquerdaVetor , .configurações {
+    display: block;
+    padding: 30px;
+}
+
+.caixaDireira {
+    background-color: rgb(201, 144, 255);
+    align-items: center;
+    display: block;
+   margin: 5px;
+   top: 15px;
+   padding: 15px;
+   width: 200px;
+   right: 75%;
+
+}
+
+.caixasMenu {
+    display: block;
+
+}
+
+/*parte sobre as trilhas*/
+
+.trilhasConteudo {
+    background-color: chocolate;
+    width: 348.53px;
+    padding: 25px;
+}
+
+.trilhasRetangulos {
+    display: block;
+    padding: 35px;
+}
+
+/*retangulos trilhas*/
+
+/*circulos*/
+#circulo {
+border-radius: 50%;
+border: 6px solid #CFCFCF;
+width: 50px;
+height: 50px;
+margin: 10px;
+}
+
+.retangulo1  {
+    background-color: #E9EAF4;
+    border-radius: 15px;
+    border: blue;
+    padding: 10px;
+}
+
+.retangulo2 {
+    background-color: #FFEEEA;
+    border-radius: 15px;
+}
+
+.retangulo3 {
+    background-color: #EBFAFE;
+    border-radius: 15px;
+}
+
+.retangulo4 {
+    background-color: #EBFAFE;
+    border-radius: 15px;
+}
+
+.retangulo5 {
+    background-color: #FFF9EC;
+    border-radius: 15px;
+}
+
+.retangulo6  {
+    background-color: #CDF2E0;
+    border-radius: 15px;
+    color: #04D76F;
+    
+}
+
+/*barra rolagem*/
+
+.fotoPrincipal {
+    padding: 50px;
+
+}
+
+
+/*parte oportunidade*/
+
+.parteOportunidades {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 35px;
+    gap: 25px;
+ 
+ }
+
+
+/*bloco com duas divs verticais*/
+.blocoHeader {
+    display: flex;
+    justify-content: space-between;
+
+}

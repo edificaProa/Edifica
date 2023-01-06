@@ -1,0 +1,10 @@
+* {
+    block-size: auto;
+}
+.perfilDiv {
+    background-color: blue;
+}
+
+.feedDiv {
+    background-color: brown;
+}

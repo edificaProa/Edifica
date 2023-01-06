@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/plataforma/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/features/">
+
+
+    <title> Cursos </title>
+</head>
+<body>
+     <!-- Essa é a pagina de cursos ( depois do pós-login) -->
+
+     <header>
+        <div class="menu">
+            <h2> Bem vinda, Fran! </h2>
+            <!-- Para ter a data atualizada, é preciso utilizar JavaScript -->
+            <h6> 05 Nov 2022, Sexta-feira </h6>
+            <!-- Botao da lupa para busca -->
+            <div id="botaoBusca">
+                <button type="button" id="Busca">
+                <img src="" id="btnBusca" alt="Buscar"/>
+            </button>
+              </div>
+              <!-- Botão de notificação com o sininho -->
+              <div id="botaoNotificações">
+                <button type="button" id="notificações">
+                <img src="/img-vetores/Add Reminder.png" id="btnotificações" alt="Sininho"/>
+            </button>
+            </div>
+<hr> </div>
+    </header>
+
+    <!-- Div lateral esquerda com os vetores, do lado esquerdo -->
+
+    <div class="caixaEsquerda">
+        <img class="caixaEsquerdaVetor" src="/img-vetores/Vector-menu1 (2).png" alt="vetor1"/> <!--NAO ESQUECER DA BARRINHA AZUL AO LADO DO PRIMEIRO VETOR-->
+        <img class="caixaEsquerdaVetor" src="/img-vetores/Vector-menu1 (3).png" alt="vetor2"/>
+        <img class="caixaEsquerdaVetor" src="/img-vetores/Vector-menu1 (4).png" alt="vetor3"/>
+        <img class="caixaEsquerdaVetor" src="/img-vetores/Vector-menu1 (5).png" alt="vetor4"/>
+        <img class="caixaEsquerdaVetor" src="/img-vetores/Vector-menu1 (6).png" alt="vetor5"/>
+
+
+      <!-- Esse próximo vetor ele está bem no fim da pagina, é o vetor azul, sinal de configuração -->
+      <div class="configurações">
+      <img src="/img-vetores/Vector-menu1 (1).png" alt="vetor6"/>
+    </div>
+    </div>
+
+    <!-- Menu lateral direito ( onde esta o logo, foto da francisca e etc) -->
+
+    <div id="caixasMenu">
+        <div class="caixaDireira">
+
+       <!-- Foto francisca + o nivel que ela está -->
+       <img src="/img-vetores/fran oic.png" alt="foto_francisca" />
+       <img src="#" alt="nivel"/>
+        <!-- logo edifica -->
+        <img src="/img-vetores/logo.png" alt="edifica"/>
+       <!-- nome e cargo da francisca -->
+
+       <h4> Francisca Ferreira </h4>
+       <h5> Engenheira </h5>
+
+       <!-- parte dos selos e vetores -->
+
+       <div class="selos">
+           <h5> Selos </h5>
+           <h4> 12 </h4>
+           <img src="/img-vetores/menu-direira (2).png" alt="selo" />
+       </div>
+
+       
+       <div class="Desempenho">
+           <h5> Desempenho </h5>
+           <h4> 9,02 </h4>
+           <img src="/img-vetores/menu-direira (3).png" alt="desempenho" />
+       </div>
+
+       
+       <div class="Eventos">
+           <h5> Eventos </h5>
+           <h4> 2 </h4>
+           <img src="/img-vetores/menu-direira (1).png" alt="eventos" />
+       </div>
+
+    <!-- Esse é o vetor de log out que fica no fim da pagina -->
+   
+    <div class="logout">
+    <button class="botaoLogout" > Log Out </button>
+    <img src="vetor_sair" alt="log out" />
+   </div>
+   </div>
+       </div>
+       </div>
+</header>
+</div>
+
+    <!-- Aqui começa a parte do "feed", que seria a parte do meio da pagina -->
+
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Construção Civil - Edificações</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">O Curso de Edificações tem por objetivo habilitar profissionais para participar do projeto da obra...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                </div>
+                <small class="text-muted">1 mês</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">LGPD: a sua empresa está preparada?</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Neste curso, você descobrirá como a LGPD mudará a maneira de as empresas lidarem com dados pessoais.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                </div>
+                <small class="text-muted">2 meses</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Curso de Mestre de Obras</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Tenha a visão geral do projeto, conheça as etapas da construção, os tipos de sistemas...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                </div>
+                <small class="text-muted">3 meses</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Curso Planejamento e Orçamento de Obras</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Você irá aprender a definir o planejamento e orçamento de uma obra desde o planejamento até o orçamento e cálculo detalhado...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                </div>
+                <small class="text-muted">44 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Desenhista de Maquete Eletrônica</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Você aprenderá a criar projetos de maquetes eletrônicas em 2D e 3D para a construção civil...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                </div>
+                <small class="text-muted">1 mês</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Marketing digital para sua empresa</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Saiba como impulsionar os resultados do seu negócio através do marketing digital.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                </div>
+                <small class="text-muted">21 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Como administrar um pequeno negócio</text></svg>
+
+            <div class="card-body">
+              <p class="card-text"> Se você é um microempreendedor individual e não entende os conceitos básicos como cliente, fornecedor...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                </div>
+                <small class="text-muted">33 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Curso Pedreiro Completo</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Você irá aprender a realizar o assentamento de elementos de alvenaria (com e sem função estrutural)...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                </div>
+                <small class="text-muted">18d</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Curso Eletricista Instalador+ NR10 </text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Você vai se profissionalizar num laboratório que simula a realidade do trabalho, desde o padrão de entrada...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                </div>
+                <small class="text-muted">10d</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Controle da movimentação financeira</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">Saber fazer um controle financeiro eficiente é requisito básico para o sucesso da sua empresa!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                  </div>
+                  <small class="text-muted">8d</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Por que devo entender o que é formalização?</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">Se seu empreendimento tem o objetivo de crescer, ele precisa passar pela fase da formalização. Feito isso, os...</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                  </div>
+                  <small class="text-muted">2d</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Curso Reparos e Reformas</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">Voltado para quem deseja aprender a realizar de forma responsável e segura diversos reparos e...</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                  </div>
+                  <small class="text-muted">15 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Planeje suas metas e resultados</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">Estabeleça metas claras e obtenha resultados esperados, fundamental para o sucesso do seu negócio.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                  </div>
+                  <small class="text-muted">58 mins</small>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Curso Como precificar serviços de obra</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">Uma boa precificação leva em conta outras variáveis, desde a...</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                  </div>
+                  <small class="text-muted">1sem</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#EF406A"/><text x="10%" y="50%" fill="#eceeef" dy=".3em">Curso de Impermeabilização</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">Conheça a importância da impermeabilização e como aplicar...</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Salvar curso</button>
+                  </div>
+                  <small class="text-muted">5d</small>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    
+</body>
+</html>

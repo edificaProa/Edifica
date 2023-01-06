@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+/* fonts 
+    'Inter', sans-serif
+    'IBM Plex Serif', serif;
+    
+*/
+* {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+}
+
+/*botoes inicio*/
+
+.botaoAmareloLogin {
+    border-radius: 35px;
+    background-color: #FD9F02;
+    color: black;
+    height: 60px;
+    width: 400px;
+    border: none;
+}
+
+.botaoAzulCadastro {
+    border-radius: 35px;
+    background-color:#2A53E5;
+    color: aliceblue;
+    height: 40px;
+    width: 240px;
+    border: none;
+}
+
+.botaoAzulCadastroDiv {
+    padding: 25px;
+    justify-content: space-evenly;
+}
+
+.botaoRosaCadastro {
+    border-radius: 35px;
+    background: linear-gradient(180deg, #2A53E5 0%, #EF406A 92.19%);
+    color: aliceblue;
+    height: 40px;
+    width: 140px;
+    border: none;
+    background-color: #fff;
+}
+
+a {
+    color: white;
+    text-decoration-style: none;
+}
+
+
+/***** login  *****/
+
+.frame-orange {
+    background-color: #fff;
+    position: absolute;
+    height: 10px;
+left: 84px;
+top: -1px;
+z-index: 2;
+}
+
+.frame-blue {
+    background-color: #fff;
+    position: absolute;
+    height: 10px;
+left: 89.79%;
+right: 1%;
+top: 0%;
+bottom: 87.39%;
+z-index: 3;
+}
+
+.Login { 
+    background-color: #fff;
+    padding: 25px;
+
+  
+}
+
+.Login h1 {    
+    background-color: #fff;
+    color: #194EA7;
+    padding: 10px;
+
+}
+
+.Login h3 {
+    background-color: #fff;
+    color: #210440;
+
+}
+
+.log-p1 {
+    background-color: #fff;
+    text-align: center;
+    left: 1000px;
+}
+
+.logo {
+    background-color: #fff; 
+    margin: 30px;
+    height: 30px;
+    
+}
+
+/************  email  ***********/
+
+.email {
+    background-color: #f4f4f4;
+    
+}
+
+.input-cadast {
+    align-items: center;
+    color: #5184DA;
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+
+}
+
+
+.input-p1  {
+   
+    width: 100%;
+    border-color: black;
+    border-radius: 23px;
+    align-items: center;
+    
+    width: 400px;
+    height: 48px;
+    border: solid #2A53E5;
+}
+
+
+
+.input h4 {
+    color: #5184DA;
+    
+}
+
+.check {
+    color: #5184DA;
+    background-color: #fff;
+}
+
+ .checkbox{
+    color: #5184DA;
+    
+}
+
+.botao-entrada {
+    background-color: #fff;
+}
+
+
+/**********   rodapee  ***********/
+
+.rodape {
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+   
+}
+
+.recuperar_senha , .criar_conta  {
+    color: black;
+   
+}
+
+.frame-blue-r {
+    position: absolute;
+ left: 1px;
+right: 90.21%;
+top: 86.13%;
+bottom: -5.5%;
+background-color: #fff;
+}
+
+.frame-orange-r {
+    background-color: #fff;
+    position: absolute;
+left: 1293px;
+bottom: -9.5%;
+}
+
+/*form*/
+
+.input , .input-p1 {
+    padding: 10px;
+    margin: 10px;
+    left: 10px;
+    width: 360px;
+    border-color: black;
+    border-radius: 23px;
+    align-items: center;
+    padding: 12px 16px;
+    width: 400px;
+    height: 48px;
+    border: solid #FD9F02;
+}
+
+
+
+/*div final cadastro  tres*/
+
+.check {
+    background-color: #fff;
+    margin: 20px;
+}
+
+/*botao rosa no final*/
+
+.botaobotaoRosaCadastroFinal {
+    background-color: #fff;
+    justify-content: space-around;
+}
+
+
+/*numero*/
+
+.numero {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+h2 {
+    margin-top: -70px;
+}
+
+.box-circle svg{
+    width: 150px;
+    height: 150px;
+    
+}
+
+
+.divResponsiv {
+    height: auto;
+    width: 100%;
+}

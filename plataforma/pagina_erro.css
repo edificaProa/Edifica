@@ -1,0 +1,59 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url("pagina-de-erro-site.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden !important;
+    font-family: 'Tahoma', sans-serif;
+    
+
+}
+
+
+.conteudo{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    font-size: 65px;
+    font-family: 'Tahoma', sans-serif;
+    color: #4A56CC;
+    text-align: right;
+    width: 85vw;
+    margin: 100px;
+
+}
+
+.paragrafo{
+    padding-top: 5%;
+}
+
+
+.botao-atualizar{
+    background-color: #4A56CC;
+    border-radius: 26px;
+    height: 80px;
+    width: 250px;
+    font-size: 40px;
+    color: #ffff;
+    border-color: #4A56CC;
+
+}
+
+.botao{
+    text-align: right;
+    width: 85vw;
+    margin:100px;
+}
+
+
+
+
+
+
